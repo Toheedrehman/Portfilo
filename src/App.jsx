@@ -101,18 +101,21 @@ const EXPERIENCE = [
 const PROJECTS = [
   {
     id: 1,
-    title: "Project One",
-    description: "A one-line description of what the project does and who it's for.",
-    tech: ["React", "Node.js", "PostgreSQL"],
-    link: "#",
+    title: "Real Chat",
+    description:
+      "A real-time chat application with user authentication, messaging, image sharing, and MongoDB integration.",
+    tech: ["React", "Node.js", "MongoDB", "Firebase"],
+    link: "https://real-chat-roan.vercel.app/",
   },
   {
-    id: 2,
-    title: "Project Two",
-    description: "A one-line description of what the project does and who it's for.",
-    tech: ["Next.js", "Prisma"],
-    link: "#",
-  },
+    
+  id: 2,
+  title: "E-Commerce Website",
+  description:
+    "A modern e-commerce website built with React and Node.js.",
+  tech: ["React", "Node.js", "PostgreSQL"],
+  link: "https://e-commerce-website-phi-sage.vercel.app/",
+},
   {
     id: 3,
     title: "Project Three",
