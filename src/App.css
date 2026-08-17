@@ -679,14 +679,56 @@ body {
 }
 
 
+ .pf-nav {
+    position: fixed !important;
+
+    top: 8px !important;
+    left: 50% !important;
+    right: auto !important;
+
+    transform: translateX(-50%) !important;
+
+    z-index: 99999 !important;
+
+    width: calc(100% - 20px);
+    max-width: 450px;
+
+    height: auto;
+    min-height: 64px;
+
+    margin: 0 !important;
+
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 999px;
+
+    box-shadow:
+      0 10px 35px rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+
+
+
+
+
 
 /* =========================================================
-   MOBILE RESPONSIVE FIX
+   MOBILE RESPONSIVE
    ========================================================= */
 
 @media (max-width: 600px) {
 
-  /* Prevent horizontal scrolling */
   html,
   body {
     width: 100%;
@@ -701,48 +743,90 @@ body {
     padding-bottom: 40px;
   }
 
-  /* =========================
-     NAVBAR
-     ========================= */
+
+  /* =======================================================
+     MOBILE NAVBAR
+     ALWAYS FIXED AT TOP
+     ======================================================= */
 
   .pf-nav {
-    position: sticky;
-    top: 8px;
+    position: fixed !important;
+
+    top: 8px !important;
+    left: 50% !important;
+    right: auto !important;
+
+    transform: translateX(-50%) !important;
+
+    z-index: 99999 !important;
 
     width: calc(100% - 20px);
-    max-width: none;
+    max-width: 600px;
 
     height: auto;
-    min-height: 58px;
+    min-height: 0px;
 
-    margin: 8px auto 0;
-    padding: 6px;
+    margin: 0 !important;
 
-    gap: 0;
+    padding: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+   border-radius: 999px;
+
+    box-shadow:
+      0 10px 35px rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
   }
+
+
+  /* =======================================================
+     NAV LINKS
+     ======================================================= */
 
   .pf-nav nav {
     width: 100%;
 
     display: grid;
+
     grid-template-columns: repeat(4, 1fr);
 
     gap: 2px;
 
     padding: 4px;
 
+    margin: 0;
+
     border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.03);
   }
 
   .pf-nav nav a {
+    display: flex;
+
+    align-items: center;
     justify-content: center;
 
-    padding: 10px 4px;
+    min-width: 0;
+
+    padding: 10px 3px;
 
     font-size: 12px;
+
     font-weight: 700;
 
     white-space: nowrap;
+
+    border-radius: 12px;
   }
 
   .pf-nav nav a::after {
@@ -755,9 +839,10 @@ body {
   }
 
 
-  /* =========================
-     HERO
-     ========================= */
+  /* =======================================================
+     IMPORTANT:
+     ADD SPACE AT TOP SO NAVBAR DOES NOT COVER HERO
+     ======================================================= */
 
   .pf-hero {
     display: block;
@@ -767,8 +852,13 @@ body {
 
     margin-top: 0;
 
-    padding: 70px 24px 50px;
+    padding: 100px 24px 50px;
   }
+
+
+  /* =======================================================
+     HERO TEXT
+     ======================================================= */
 
   .pf-hero-text {
     width: 100%;
@@ -777,12 +867,15 @@ body {
 
   .pf-eyebrow {
     font-size: 12px;
+
     letter-spacing: 0.14em;
+
     line-height: 1.6;
   }
 
   .pf-hero h1 {
-    font-size: clamp(3rem, 15vw, 4rem);
+    font-size: clamp(2.8rem, 14vw, 4rem);
+
     line-height: 0.98;
 
     margin-bottom: 20px;
@@ -792,13 +885,18 @@ body {
 
   .pf-role {
     font-size: 12px;
+
     letter-spacing: 0.12em;
+
+    line-height: 1.5;
+
     margin-bottom: 20px;
   }
 
   .pf-tagline {
-    font-size: 16px;
-    line-height: 1.55;
+    font-size: 15px;
+
+    line-height: 1.6;
 
     max-width: 100%;
 
@@ -806,9 +904,9 @@ body {
   }
 
 
-  /* =========================
+  /* =======================================================
      TECHNOLOGY CHIPS
-     ========================= */
+     ======================================================= */
 
   .pf-stack {
     gap: 8px;
@@ -816,13 +914,14 @@ body {
 
   .pf-chip {
     font-size: 10px;
+
     padding: 9px 12px;
   }
 
 
-  /* =========================
+  /* =======================================================
      HERO IMAGE
-     ========================= */
+     ======================================================= */
 
   .pf-hero-photo {
     width: 100%;
@@ -836,38 +935,43 @@ body {
 
   .pf-hero-photo img {
     width: 100%;
+
     max-width: 280px;
 
     border-radius: 22px;
   }
 
 
-  /* =========================
+  /* =======================================================
      SECTIONS
-     ========================= */
+     ======================================================= */
 
   .pf-section {
     width: calc(100% - 32px);
+
     max-width: none;
 
     margin: 24px auto;
+
     padding: 36px 22px;
 
     border-radius: 22px;
   }
 
 
-  /* =========================
+  /* =======================================================
      EXPERIENCE
-     ========================= */
+     ======================================================= */
 
   .pf-ledger-row {
     gap: 14px;
+
     margin-bottom: 20px;
   }
 
   .pf-ledger-spine {
     width: 14px;
+
     flex-shrink: 0;
   }
 
@@ -878,36 +982,42 @@ body {
 
   .pf-ledger-content {
     padding-bottom: 28px;
+
     min-width: 0;
   }
 
   .pf-ledger-content h3 {
     font-size: 21px;
+
     line-height: 1.2;
   }
 
   .pf-ledger-meta {
     font-size: 11px;
+
     line-height: 1.5;
   }
 
   .pf-ledger-detail {
     font-size: 14px;
+
     line-height: 1.6;
   }
 
 
-  /* =========================
+  /* =======================================================
      PROJECTS
-     ========================= */
+     ======================================================= */
 
   .pf-project-grid {
     grid-template-columns: 1fr;
+
     gap: 16px;
   }
 
   .pf-project-card {
     padding: 22px;
+
     border-radius: 20px;
   }
 
@@ -918,53 +1028,62 @@ body {
 
   .pf-project-card h3 {
     font-size: 21px;
+
+    line-height: 1.25;
   }
 
   .pf-project-desc {
     font-size: 14px;
+
     line-height: 1.6;
   }
 
 
-  /* =========================
+  /* =======================================================
      SKILLS
-     ========================= */
+     ======================================================= */
 
   .pf-skills-grid {
     grid-template-columns: 1fr;
+
     gap: 14px;
   }
 
   .pf-skill-group {
     padding: 20px;
+
     border-radius: 20px;
   }
 
 
-  /* =========================
+  /* =======================================================
      CONTACT
-     ========================= */
+     ======================================================= */
 
   .pf-contact h2 {
     font-size: 2rem;
+
     line-height: 1.15;
   }
 
   .pf-contact-links {
     flex-direction: column;
+
     align-items: stretch;
+
     gap: 10px;
   }
 
   .pf-contact-links a {
     width: 100%;
+
     justify-content: flex-start;
   }
 
 
-  /* =========================
+  /* =======================================================
      CONTACT FORM
-     ========================= */
+     ======================================================= */
 
   .contact-form {
     gap: 14px;
@@ -972,29 +1091,33 @@ body {
 
   .form-row {
     grid-template-columns: 1fr;
+
     gap: 14px;
   }
 
   .form-field input,
   .message-field textarea {
     width: 100%;
+
     font-size: 14px;
   }
 
   .message-field textarea {
     min-height: 130px;
+
     resize: vertical;
   }
 
   .btn-primary {
     width: 100%;
+
     padding: 12px 18px;
   }
 
 
-  /* =========================
+  /* =======================================================
      FOOTER
-     ========================= */
+     ======================================================= */
 
   .pf-footer {
     padding: 28px 18px;
@@ -1002,6 +1125,7 @@ body {
 
   .pf-footer-grid {
     grid-template-columns: 1fr;
+
     gap: 8px;
   }
 
@@ -1011,6 +1135,7 @@ body {
 
   .footer-item {
     width: 100%;
+
     padding: 10px;
   }
 
@@ -1019,9 +1144,9 @@ body {
   }
 
 
-  /* =========================
+  /* =======================================================
      TOAST
-     ========================= */
+     ======================================================= */
 
   .toast {
     left: 14px;
@@ -1030,7 +1155,9 @@ body {
     top: 14px;
 
     min-width: 0;
+
     width: auto;
+
     max-width: none;
   }
 }
@@ -1044,16 +1171,22 @@ body {
 
   .pf-nav {
     width: calc(100% - 14px);
+
+    top: 6px !important;
   }
 
   .pf-nav nav a {
     font-size: 11px;
+
     padding: 9px 2px;
   }
 
   .pf-hero {
     padding-left: 20px;
     padding-right: 20px;
+
+    /* Keep enough space below fixed navbar */
+    padding-top: 100px;
   }
 
   .pf-hero h1 {
@@ -1062,12 +1195,14 @@ body {
 
   .pf-section {
     width: calc(100% - 24px);
+
     padding-left: 18px;
     padding-right: 18px;
   }
 
   .pf-chip {
     font-size: 9px;
+
     padding: 8px 10px;
   }
 }
