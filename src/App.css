@@ -677,3 +677,397 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+
+
+/* =========================================================
+   MOBILE RESPONSIVE FIX
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  /* Prevent horizontal scrolling */
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .pf {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    padding-bottom: 40px;
+  }
+
+  /* =========================
+     NAVBAR
+     ========================= */
+
+  .pf-nav {
+    position: sticky;
+    top: 8px;
+
+    width: calc(100% - 20px);
+    max-width: none;
+
+    height: auto;
+    min-height: 58px;
+
+    margin: 8px auto 0;
+    padding: 6px;
+
+    gap: 0;
+  }
+
+  .pf-nav nav {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 2px;
+
+    padding: 4px;
+
+    border-radius: 18px;
+  }
+
+  .pf-nav nav a {
+    justify-content: center;
+
+    padding: 10px 4px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    white-space: nowrap;
+  }
+
+  .pf-nav nav a::after {
+    bottom: 4px;
+  }
+
+  .pf-nav nav a:hover,
+  .pf-nav nav a:focus-visible {
+    transform: none;
+  }
+
+
+  /* =========================
+     HERO
+     ========================= */
+
+  .pf-hero {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    margin-top: 0;
+
+    padding: 70px 24px 50px;
+  }
+
+  .pf-hero-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .pf-eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    line-height: 1.6;
+  }
+
+  .pf-hero h1 {
+    font-size: clamp(3rem, 15vw, 4rem);
+    line-height: 0.98;
+
+    margin-bottom: 20px;
+
+    overflow-wrap: break-word;
+  }
+
+  .pf-role {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    margin-bottom: 20px;
+  }
+
+  .pf-tagline {
+    font-size: 16px;
+    line-height: 1.55;
+
+    max-width: 100%;
+
+    margin-bottom: 24px;
+  }
+
+
+  /* =========================
+     TECHNOLOGY CHIPS
+     ========================= */
+
+  .pf-stack {
+    gap: 8px;
+  }
+
+  .pf-chip {
+    font-size: 10px;
+    padding: 9px 12px;
+  }
+
+
+  /* =========================
+     HERO IMAGE
+     ========================= */
+
+  .pf-hero-photo {
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 14px;
+
+    border-radius: 24px;
+  }
+
+  .pf-hero-photo img {
+    width: 100%;
+    max-width: 280px;
+
+    border-radius: 22px;
+  }
+
+
+  /* =========================
+     SECTIONS
+     ========================= */
+
+  .pf-section {
+    width: calc(100% - 32px);
+    max-width: none;
+
+    margin: 24px auto;
+    padding: 36px 22px;
+
+    border-radius: 22px;
+  }
+
+
+  /* =========================
+     EXPERIENCE
+     ========================= */
+
+  .pf-ledger-row {
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .pf-ledger-spine {
+    width: 14px;
+    flex-shrink: 0;
+  }
+
+  .pf-ledger-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .pf-ledger-content {
+    padding-bottom: 28px;
+    min-width: 0;
+  }
+
+  .pf-ledger-content h3 {
+    font-size: 21px;
+    line-height: 1.2;
+  }
+
+  .pf-ledger-meta {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .pf-ledger-detail {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+
+  /* =========================
+     PROJECTS
+     ========================= */
+
+  .pf-project-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .pf-project-card {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .pf-project-card:hover,
+  .pf-project-card.is-open {
+    transform: none;
+  }
+
+  .pf-project-card h3 {
+    font-size: 21px;
+  }
+
+  .pf-project-desc {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+
+  /* =========================
+     SKILLS
+     ========================= */
+
+  .pf-skills-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .pf-skill-group {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+
+  /* =========================
+     CONTACT
+     ========================= */
+
+  .pf-contact h2 {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+
+  .pf-contact-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .pf-contact-links a {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+
+  /* =========================
+     CONTACT FORM
+     ========================= */
+
+  .contact-form {
+    gap: 14px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .form-field input,
+  .message-field textarea {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .message-field textarea {
+    min-height: 130px;
+    resize: vertical;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 12px 18px;
+  }
+
+
+  /* =========================
+     FOOTER
+     ========================= */
+
+  .pf-footer {
+    padding: 28px 18px;
+  }
+
+  .pf-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .pf-footer-col {
+    gap: 8px;
+  }
+
+  .footer-item {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .footer-label {
+    font-size: 14px;
+  }
+
+
+  /* =========================
+     TOAST
+     ========================= */
+
+  .toast {
+    left: 14px;
+    right: 14px;
+
+    top: 14px;
+
+    min-width: 0;
+    width: auto;
+    max-width: none;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+  .pf-nav {
+    width: calc(100% - 14px);
+  }
+
+  .pf-nav nav a {
+    font-size: 11px;
+    padding: 9px 2px;
+  }
+
+  .pf-hero {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .pf-hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .pf-section {
+    width: calc(100% - 24px);
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .pf-chip {
+    font-size: 9px;
+    padding: 8px 10px;
+  }
+}
