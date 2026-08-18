@@ -118,10 +118,10 @@ const PROJECTS = [
 },
   {
     id: 3,
-    title: "Project Three",
-    description: "A one-line description of what the project does and who it's for.",
-    tech: ["React Native", "Firebase"],
-    link: "#",
+    title: "Task Manager",
+    description: "A task management app for organizing and tracking daily tasks.",
+    tech: ["React.js ", "Node.js", "Express", "MongoDB","JWT","Vercel"],
+    link: "https://task-flow-beige-ten.vercel.app/",
   },
 ];
 
