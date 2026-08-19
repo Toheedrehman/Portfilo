@@ -120,7 +120,7 @@ body {
   align-items: center;
   gap: 48px;
   padding: 80px 48px;
-  margin-top: 16px;
+  margin-top: 78px;
 }
 
 .pf-hero-text {
@@ -1205,4 +1205,34 @@ body {
 
     padding: 8px 10px;
   }
+}
+
+.pf-about-text {
+  max-width: 850px;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.8;
+}
+
+.pf-about-text p {
+  margin: 0 0 24px;
+}
+
+.pf-about-text p:last-child {
+  margin-bottom: 0;
+}
+
+.pf-about-text,
+.pf-ledger-detail {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.8;
+}
+
+
+#root {
+  color-scheme: dark;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  scroll-behavior: smooth;
+
 }

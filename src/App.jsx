@@ -48,10 +48,7 @@ const PROFILE = {
   stack: ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "AWS"],
 };
 
-const ABOUT = `Hi, I’m Toheed Rehman, a Computer Science graduate from Iqra University and a Full-Stack Developer who enjoys turning ideas into real, useful products.
-I work across the stack, building modern websites and mobile applications with technologies like React, Next.js, Node.js, Python, and cloud platforms. I enjoy creating clean, responsive interfaces just as much as designing reliable backend systems and APIs that power them.
-I’m also passionate about Artificial Intelligence and Machine Learning, especially Deep Learning and Computer Vision. During my academic journey, I worked on AI-focused projects that helped me explore how intelligent systems can be applied to real-world problems.
-What I enjoy most is taking an idea from the first concept to a working product — designing the experience, building the technology behind it, and continuously improving it along the way. I’m always learning, experimenting with new technologies, and looking for better ways to build products that are simple, useful, and impactful.
+const ABOUT = `Hi, I’m Toheed Rehman, a Computer Science graduate from Iqra University and a Full-Stack Developer who enjoys turning ideas into real, useful products.I work across the stack, building modern websites and mobile applications with technologies like React, Next.js, Node.js, Python, and cloud platforms. I enjoy creating clean, responsive interfaces just as much as designing reliable backend systems and APIs that power them.I’m also passionate about Artificial Intelligence and Machine Learning, especially Deep Learning and Computer Vision. During my academic journey, I worked on AI-focused projects that helped me explore how intelligent systems can be applied to real-world problems.What I enjoy most istaking an idea from the first concept to a working product — designing the experience, building the technology behind it, and continuously improving it along the way. I’m always learning, experimenting with new technologies, and looking for better ways to build products that are simple, useful, and impactful.
 `
 
 const EXPERIENCE = [
@@ -178,7 +175,11 @@ export default function Portfolio() {
       {/* About */}
       <section id="about" className="pf-section">
         <p className="pf-eyebrow">About</p>
-        <p className="pf-about-text">{ABOUT}</p>
+        <div className="pf-about-text">
+  {ABOUT.split("\n\n").map((paragraph, index) => (
+    <p key={index}>{paragraph}</p>
+  ))}
+</div>
       </section>
 
       {/* Experience — ledger timeline */}
