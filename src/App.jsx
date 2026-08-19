@@ -123,6 +123,13 @@ const PROJECTS = [
     tech: ["React.js ", "Node.js", "Express", "MongoDB","JWT","Vercel"],
     link: "https://task-flow-beige-ten.vercel.app/",
   },
+  {
+  id: 3,
+  title: "Nova AI Chatbot",
+  description: "An intelligent AI chatbot with a modern conversational interface, user authentication, chat history, and Gemini-powered AI responses.",
+  tech: ["React.js", "Node.js", "Express", "MongoDB", "JWT", "Gemini AI", "Vercel"],
+  link: "https://nova-chatboot.vercel.app/",
+},
 ];
 
 const SKILLS = [
