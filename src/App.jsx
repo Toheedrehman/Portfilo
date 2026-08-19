@@ -68,34 +68,18 @@ const EXPERIENCE = [
   },
 
   {
-    id: 2,
-    role: "Full Stack Developer",
-    company: "Stellar Solutions",
-    location: "Remote",
-    period: "Aug 2024 — June 2025",
-    detail:
-      "Led development on an e-commerce platform using React and Node.js. Integrated payment gateways, implemented server-side rendering with Next.js, and optimized database queries (PostgreSQL) to reduce page load times by ~30%.",
-  },
+  id: 2,
+  role: "AI/MLDeveloper",
+  company: "Code Alpha",
+  location: "Karachi, Pakistan — Remote",
+  period: "Dec 2025 — Feb 2026",
+  detail:
+    "Developed real-time object and face detection systems using Python, OpenCV, and YOLO. Implemented multi-class object detection and localization, face detection and recognition, image and video preprocessing, bounding boxes, confidence scores, and real-time webcam detection. Used Google Colab and GPU-based environments for training and testing deep learning models.",
+},
 
-  {
-    id: 3,
-    role: "Frontend Engineer",
-    company: "Innovative Labs",
-    location: "City, Country",
-    period: "Aug 2023 — Feb 2024",
-    detail:
-      "Built reusable UI components and a design system in React and TypeScript. Improved accessibility and test coverage, introduced performance budgets and lowered bundle size through code-splitting and lazy loading.",
-  },
 
-  {
-    id: 4,
-    role: "Full Stack Developer",
-    company: "Random Company",
-    location: "Remote",
-    period: "Jan 2024 — Dec 2024",
-    detail:
-      "Built end-to-end features using React, Node.js, and PostgreSQL. Implemented CI/CD workflows, improved load times and UX, and collaborated across design and backend teams to ship production-ready components.",
-  },
+  
+   
 ];
 
 const PROJECTS = [
