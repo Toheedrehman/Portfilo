@@ -38,7 +38,7 @@ import blogPdf from "./blog/ClassificationandDetectionofSkinLesionsThroughMachin
 const PROFILE = {
   name: "Toheed Rehman",
   role: "Computer Engineer",
-  tagline: "I build fast, reliable products for the web — from the interface down to the infrastructure.",
+  tagline: "I build fast, reliable digital products for websites and mobile apps — from seamless user experiences to powerful backend systems.",
   photo: profilePhoto,
   email: "Toheedrehman775@gmail.com",
   phone: "+923368894775",
