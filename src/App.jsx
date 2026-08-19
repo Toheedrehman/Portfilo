@@ -37,8 +37,8 @@ import blogPdf from "./blog/ClassificationandDetectionofSkinLesionsThroughMachin
 --------------------------------------------------------- */
 const PROFILE = {
   name: "Toheed Rehman",
-  role: "Computer Engineer",
-  tagline: "I build fast, reliable digital products for websites and mobile apps — from seamless user experiences to powerful backend systems.",
+  role: "Software Engineer",
+  tagline: "I build fast, reliable digital products for Websites and Mobile Apps from seamless user experiences to powerful backend systems.",
   photo: profilePhoto,
   email: "Toheedrehman775@gmail.com",
   phone: "+923368894775",
@@ -48,13 +48,11 @@ const PROFILE = {
   stack: ["React", "Next.js", "Node.js", "TypeScript", "PostgreSQL", "AWS"],
 };
 
-const ABOUT = `Hi, I'm Toheed Rehman, a Computer Science graduate from Iqra University and a Full-Stack Developer with a strong passion for Artificial Intelligence and Machine Learning.
-
-I specialize in designing and developing scalable, high-performance web applications using modern technologies such as React, Next.js, Node.js, Python, and Azure Cloud. My expertise spans both frontend and backend development, enabling me to build complete end-to-end solutions.
-
-Beyond software development, I have a strong research interest in Artificial Intelligence, particularly Deep Learning and Computer Vision. During my academic journey, I worked on AI research projects focused on computer vision and intelligent systems, strengthening my ability to solve real-world problems with machine learning.
-
-I enjoy turning ideas into impactful digital products, continuously learning new technologies, and building innovative solutions that create meaningful value.`
+const ABOUT = `Hi, I’m Toheed Rehman, a Computer Science graduate from Iqra University and a Full-Stack Developer who enjoys turning ideas into real, useful products.
+I work across the stack, building modern websites and mobile applications with technologies like React, Next.js, Node.js, Python, and cloud platforms. I enjoy creating clean, responsive interfaces just as much as designing reliable backend systems and APIs that power them.
+I’m also passionate about Artificial Intelligence and Machine Learning, especially Deep Learning and Computer Vision. During my academic journey, I worked on AI-focused projects that helped me explore how intelligent systems can be applied to real-world problems.
+What I enjoy most is taking an idea from the first concept to a working product — designing the experience, building the technology behind it, and continuously improving it along the way. I’m always learning, experimenting with new technologies, and looking for better ways to build products that are simple, useful, and impactful.
+`
 
 const EXPERIENCE = [
   {
